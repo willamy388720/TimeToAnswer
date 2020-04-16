@@ -20,14 +20,19 @@ Rails.application.config.assets.precompile += %w( admins_backoffice.js
                                                   admin_devise.js 
                                                   admin_devise.css
                                                   user_devise.js
-                                                  user_devise.css )
+                                                  user_devise.css 
+                                                  site.js
+                                                  site.css )
 
 # /lib/assets
 Rails.application.config.assets.precompile += %w( sb-admin-2.js 
                                                   sb-admin-2.css
                                                   custom.js
                                                   custom.css
-                                                  img.jpg )
+                                                  img.jpg 
+                                                  ie10-viewport-bug-workaround.css
+                                                  ie10-viewport-bug-workaround.js
+                                                  navbar.css )
 
 # /vendor/assets
 Rails.application.config.assets.precompile += %w( jquery-2.2.3/dist/jquery.js )
