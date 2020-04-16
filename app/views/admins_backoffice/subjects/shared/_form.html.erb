@@ -29,9 +29,9 @@
             <%= form_with(model: [ :admins_backoffice, @subject], local: true) do |form| %>
             <div class="form-group">
               <%= form.label :description %>
-              <%= form.text_field :description, class:"form-control", placeholder:"Ex.: Ciência da Computação" %>
+              <%= form.text_field :description, class:"form-control", placeholder: t('placeholder.subject_description') %>
             </div>
-            <button type="submit" class="btn btn-primary">Salvar</button>
+            <button type="submit" class="btn btn-primary"><%= t('buttons.save') %></button>
             <% end %>
           </div>
           <!-- /.col-lg-6 (nested) -->
