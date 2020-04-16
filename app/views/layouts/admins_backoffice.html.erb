@@ -67,17 +67,22 @@
           <ul class="nav" id="side-menu">
             <li>
               <%= link_to admins_backoffice_welcome_index_path do %>
-              <i class="fa fa-dashboard fa-fw"></i> Dashboard
+                <i class="fa fa-dashboard fa-fw"></i> Dashboard
               <% end %>
             </li>
             <li>
               <%= link_to admins_backoffice_admins_path do %>
-              <i class="fa fa-users fa-fw"></i> Administradores
+                <i class="fa fa-users fa-fw"></i> Administradores
               <% end %>
             </li>
             <li>
               <%= link_to admins_backoffice_subjects_path do %>
-              <i class="fa fa-file-text-o fa-fw"></i> Assuntos/Áreas
+                <i class="fa fa-file-text-o fa-fw"></i> Assuntos/Áreas
+              <% end %>
+            </li>
+            <li>
+              <%= link_to admins_backoffice_questions_path do %>
+                <i class="fa fa-list-ol fa-fw"></i> Perguntas
               <% end %>
             </li>
           </ul>
