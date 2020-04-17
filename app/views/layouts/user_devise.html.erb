@@ -46,5 +46,17 @@
             </script>
         <% end %>
     <% end %>
+    <% unless resource.errors.empty? %>
+        <% resource.errors.full_messages.each do |msg| %>
+            <script>
+                $.bootstrapGrowl('<%= msg %>', {
+                type: 'danger',
+                align: 'center',
+                allow_dismiss: true,
+                stackup_spacing: 10
+                });
+            </script>
+        <% end %>
+    <% end %>
   </body>
 </html>
