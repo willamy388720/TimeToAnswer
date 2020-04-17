@@ -6,6 +6,9 @@ class Question < ApplicationRecord
   paginates_per 5
 
   scope :_search_, ->(term, page){
-    includes(:answers).where("description LIKE ?", "%#{term}%").page(page)
+    includes(:answers, :subject).where("description LIKE ?", "%#{term}%").page(page)
+  }
+  scope :_search_subject_, ->(subject_id, page){
+    includes(:answers, :subject).where(subject_id: subject_id).page(page)
   }
 end
