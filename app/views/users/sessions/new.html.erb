@@ -13,7 +13,8 @@
             <%= f.password_field :password, class:"form-control", placeholder:"Password" %>
           </div>
           <div>
-            <%= f.submit "Log in", class:"btn btn-default submit test"%>
+            <%= f.submit "Log in", class:"btn btn-default submit test"%><br>
+            <%= link_to "Esqueceu a sua senha?", new_user_password_path, class:"reset_pass"%>
           </div>
 
           <div class="clearfix"></div>

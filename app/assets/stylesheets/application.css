@@ -12,3 +12,12 @@
  *
  *= require_self
  */
+
+.login_content .teste:before,
+.login_content .teste:after {
+    content: "";
+    height: 1px;
+    position: absolute;
+    top: 10px;
+    width: 13%;
+}
