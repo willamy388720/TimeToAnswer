@@ -3,7 +3,7 @@ class UsersBackoffice::ProfileController < UsersBackofficeController
   before_action :set_user
 
   def edit
-    
+    @user.build_user_profile if @user.user_profile.blank?
   end
 
   def update
