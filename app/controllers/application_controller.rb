@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   # Set Layout
   layout :layout_by_resource
+  before_action :check_pagination
   
   protected
   
@@ -9,6 +10,12 @@ class ApplicationController < ActionController::Base
         "#{resource_class.to_s.downcase}_devise"
       else
         "application"
+      end
+    end
+
+    def check_pagination
+      unless user_signed_in?
+        params.extract!(:page)
       end
     end
 end
