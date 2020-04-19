@@ -38,6 +38,7 @@
         address: Endereço
         gender: Sexo
         birthdate: Data de Nascimento
+        zip_code: CEP
         created_at: Criado em
         updated_at: Atualizado em
       question:
