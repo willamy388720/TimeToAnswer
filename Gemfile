@@ -37,6 +37,8 @@ gem 'prawn-rails'
 gem 'redis'
 gem 'hiredis'
 gem 'trix'
+gem 'searchkick'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
