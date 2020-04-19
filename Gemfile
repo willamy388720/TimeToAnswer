@@ -34,6 +34,8 @@ gem 'kaminari'
 gem 'kaminari-i18n'
 gem 'cocoon'
 gem 'prawn-rails'
+gem 'redis'
+gem 'hiredis'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
